@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block style %}
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"/>
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<!--Card with Media-->    
+  <div id="posts" style="padding-left: 350px;">
+    <div class="media block-update-card">
+      <a class="pull-left" href="#">
+        <img class="media-object update-card-MDimentions" src="http://3.bp.blogspot.com/-IbEOTNtCMyU/TfCAdHaAxEI/AAAAAAAAA8U/EATib38SSAM/s320/joe-mcelderry.jpg" alt="...">
+      </a>
+      <div class="media-body update-card-body">
+        <h4 class="media-heading">Manning Hilton</h4>
+        <p>This is the body content of this media.This can be 
+          used as an update panel</p>
+      </div>
+      <div class="card-action-pellet btn-toolbar pull-right" role="toolbar">
+          <div class="btn-group fa fa-mail-reply"></div>
+          <div class="btn-group fa fa-map-marker"></div>
+          <div class="btn-group fa fa-magic"></div>
+          <div class="btn-group fa fa-photo"></div>
+        </div>
+     </div>
+  </div>
+  {% endblock %}
+  
+  
+  
+  
+  
+  
+    
